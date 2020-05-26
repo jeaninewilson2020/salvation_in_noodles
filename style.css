@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Kanit, sans-serif;
+    font-weight: 100;
+    color: black;
+    font-size: 22px;
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    padding: 10px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10%;
+}
+
+.navbar p {
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+.main {
+    padding-top: 35px;
+    opacity: 0.9;
+}
+
+.about-us {
+    display: flex;
+    height: 300px;
+    background-image: url("noodles.jpg");
+    background-size: cover;
+    padding-top: 35px;
+}
+
+.about-us .content {
+    margin: auto;
+    background-color: white;
+    width: 100%;
+}
+
+#specialities {
+    min-height: 500px;
+    margin: auto;
+    padding-top: 70px;
+}
+
+.foods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.food {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.food img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    padding: 10px;
+    height: auto;
+}
+
+.food span {
+    padding: 5px;
+    min-width: 240px;
+    font-weight: bold;
+    text-align: center;
+}
+
+team {
+    padding-top: 70px;
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teammate {
+    padding: 10px;
+    flex-basis: 280px;
+}
+
+.teammate img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: auto;
+}
+
+.contact,
+.copyright {
+    padding-top: 20px;
+}
+
+.contact-container {
+    background-image: url("vietnam.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+}
+
