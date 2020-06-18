@@ -7,8 +7,17 @@ body {
     font-family: Kanit, sans-serif;
     font-weight: 100;
     color: black;
+    background-color: #f2ecdc;
     font-size: 22px;
     text-align: center;
+}
+
+textarea, select {
+    font-family: Kanit, sans-serif;
+}
+
+#date, #time, #submit {
+    font-family: Kanit, sans-serif;
 }
 
 a {
@@ -48,14 +57,14 @@ p {
 .about-us {
     display: flex;
     height: 300px;
-    background-image: url("noodles.jpg");
+    background-image: url("images/noodles.jpg");
     background-size: cover;
     padding-top: 35px;
 }
 
 .about-us .content {
     margin: auto;
-    background-color: white;
+    background-color: #f2ecdc;
     width: 100%;
 }
 
@@ -82,8 +91,13 @@ p {
     margin-left: auto;
     margin-right: auto;
     width: 200px;
-    padding: 10px;
     height: auto;
+    padding: 10px;
+  
+}
+
+.food img:hover {
+    transform: scale(1.2);
 }
 
 .food span {
@@ -93,7 +107,7 @@ p {
     text-align: center;
 }
 
-team {
+#team {
     padding-top: 70px;
     padding-top: 5px;
     display: flex;
@@ -111,6 +125,7 @@ team {
     margin-right: auto;
     width: 200px;
     height: auto;
+    border: 1px solid black;
 }
 
 .contact,
@@ -119,10 +134,39 @@ team {
 }
 
 .contact-container {
-    background-image: url("vietnam.jpg");
+    background-image: url("images/vietnam.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     opacity: 0.9;
 }
+
+#submit {
+    margin-bottom: 24px;
+}
+
+label span {
+    color: red;
+}
+
+.booking {
+    padding-bottom: 18px;
+}
+
+label {
+    padding-bottom: 18px;
+}
+
+#name {
+    min-width: 400px;
+}
+
+#phone {
+    min-width: 400px; 
+}
+
+#email {
+    min-width: 400px;
+}
+
 
