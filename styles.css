@@ -1,0 +1,175 @@
+body, html {
+    height: 100%;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, div {
+    padding: 0;
+    border: 0;
+    margin: 0;
+  }
+
+
+.home-image-container {
+    background-image: url("images/bg.jpg");
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0px;  
+    opacity: 0.9; 
+    color: black; 
+ }
+
+
+
+
+header {
+    box-sizing: border-box;
+    position: fixed;  
+    cursor: pointer;
+    padding-left: 20px; 
+    width: 100%;
+    text-decoration: none;
+    z-index: 999; 
+    top: 0; 
+    color: black; 
+    background: transparent;
+    
+}
+
+header.active {
+    box-sizing: border-box;
+    position: fixed;  
+    cursor: pointer;
+    padding-left: 20px; 
+    width: 100%;
+    text-decoration: none;
+    z-index: 999; 
+    top: 0; 
+    color: white; 
+    background: black; 
+    
+}
+
+
+.title-nav-wrapper a:hover {
+    opacity: 0.7; 
+}
+
+.main-nav ul li
+ { 
+     display: inline-block;
+     margin: auto;
+     list-style-type: none;
+   
+ }
+
+ ul {
+     display: flex;
+     flex-wrap: wrap;
+     float: right; 
+     display: block;
+  
+ }
+
+ li {
+     padding-right: 20px; 
+ }
+
+ .title-wrapper {
+     margin-top: 30px; 
+ }
+
+ .page-description {
+     text-align: center;
+ }
+
+ .inner-description-container {
+     display: inline-block;
+     margin: 0 auto;
+     width: 50%;
+     padding: 140px; 
+     margin-top: 30px; 
+ }
+
+ .join-us {
+     background-color: #dbd9d3;
+     width: 40%;
+     margin: 0 auto; 
+     margin-top: 100px;
+     padding-top: 10px;
+     padding-bottom: 10px; 
+
+ }
+
+ p a {
+     color: black;
+     text-decoration: none;
+     font-size: 1.15em;
+ }
+
+ .join-us:hover {
+     opacity: 0.8;
+ }
+
+ .description {
+    display: inline-block;
+    margin: 0 auto;
+    width: 50%;
+    padding-top: 100px; 
+    padding-bottom: 100px; 
+    padding-left: 340px; 
+    margin-top: 30px; 
+    text-align: center; 
+ }
+
+.tour {
+ background-color: #dbd9d3;
+ width: 30%;
+ margin: 0 auto; 
+ margin-top: 50px;
+ padding-top: 10px;
+ padding-bottom: 10px; 
+
+}
+
+.description h2 {
+    font-style: italic; 
+}
+
+.container {
+    
+    max-width: 960px; 
+    margin: 0 auto; 
+    background:white; 
+    font-size: 24px; 
+    padding: 25px; 
+    
+}
+
+
+.parallax {
+    padding: 100px 35px; 
+    min-height: 500px;
+    background: transparent;
+
+}
+
+.info {
+    z-index: 2; 
+    position: relative; 
+    color: white; 
+}
+
+
+@media only screen and (max-width: 767px) {
+    body {
+        background-image: url('images/bg.jpg');
+    }
+    #main-image {
+        background-image: url('images/two-women.jpg')
+    }
+}
+
