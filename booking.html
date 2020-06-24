@@ -1,35 +1,38 @@
 <!DOCTYPE html>
+<html lang = "en">
 <head>
-    <html lang = "en">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Booking Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Vietnamese, Noodles, Hoxton">
+
+    <title>Bookings | Salvation in Noodles</title>
+
     <link rel="stylesheet" href="resources/style.css" type="text/css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
 </head>
-<body>
 
+<body>
   <!--  action="#.form" -->
 <form method="post" action="thanks.html" onSubmit="return validateForm();">
     <h1>Book A Table</h1>
     <h2 class="booking">We would be happy to reserve a table for you at Salvation in Noodles!</h2>
     <label for="name">Name<span>*</span></label><br>
     <input type="text" id="name"/><br>
-    <label for="phone">Phone</label><br>
+
+    <label for="phone">Phone<span>*</span></label><br>
     <input type="text" id="phone"/><br>
-    <label for="email">Email<span>*</span><br>
+
+    <label for="email">Email<span>*</span></label><br>
     <input type="text" id="email" /> <br>
 
     <label for="date">Date<span>*</span></label><br>
     <input type="text" name="date" id="date" placeholder="DD/MM/YYYY"/><br>
 
     <label for="time">Time<span>*</span></label><br>
-    <input type="text" id="time" placeholder="HH:MM"/>
-    <br>
-    <label for="number">Number of Attendees<span>*</span></label>
-    <br>
+    <input type="text" id="time" placeholder="HH:MM"/><br>
+    <label for="number">Number of Attendees<span>*</span></label><br>
+   
     <select name="number" id="number">
         <option value="1">1</option>
         <option value="2">2</option>
@@ -38,12 +41,16 @@
         <option value="5">5</option>
         <option value="6">6</option>
         <option value="7">7+ (specify in the comments)</option>
-    </select><br>
-    <label for="comments">Comments/Additional Requests</label><br>
+    </select>
+    <br>
+
+    Comments/Additional Requests
+    <br>
     <textarea rows="10" cols="30" name="comment" placeholder="Number of additional attendees, allergies, special occassions ect"></textarea>
     <br>
     <input type="submit" id="submit"/>
 </form>
+
 <footer>
     <div class="contact-container">
     <div class="contact">
@@ -58,8 +65,9 @@
         <h5>Copyright Salvation in Noodles 2020</h5>
     </div>
 </div>
-</div>
 </footer>
+
 <script src="script.js" async></script>
+
 </body>
 </html>

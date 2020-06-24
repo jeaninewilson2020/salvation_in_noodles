@@ -1,4 +1,39 @@
 
+
+function isEmpty(str) {
+    "use strict";
+    return (str.length === 0 || !str.trim());
+}
+
+function validatePhone(inputtext) {
+    "use strict";
+    var phoneno = /^\d{11}$/;
+    if (inputtext.value.match(phoneno)) 
+    {
+    return true; 
+    } 
+    return false; 
+}
+
+function validateEmail(email) {
+    "use strict";
+    var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+    return isEmpty(email) || re.test(email);
+}
+
+
+function validateDate(enteredDate) {
+    "use strict";
+    var idate = document.getElementById("date"), 
+    dateReg = /(0[1-9]|[12][0-9]|3[01])[\/](0[1-9]|1[012])[\/]201[4-9]|20[2-9][0-9]/;
+    if (!dateReg.test(idate.value)) {
+        return false; 
+    } else {
+        return true; 
+    }
+    
+}
+
 function validateForm() {
     if (isEmpty(document.getElementById('name').value.trim())) {
         alert('Name is required!');
@@ -24,45 +59,18 @@ function validateForm() {
     }
     else if (isEmpty(document.getElementById('time').value.trim())) {
         alert('Time is required!');
-        return false;
-    } /*else if (!validateTime(document.getElementById('time'))) {
+        return false; /*
+    } else if (!validateTime(document.getElementById('time'))) {
         alert("Please enter a valid time. We are open for bookings Monday to Sunday, 6pm to 10pm.")
-    }*/
-    else {
-      alert('Thank you for your booking request. A member of our team will be in touch to confirm shortly.');
     }
+    else {
+      const submit = document.getElementById('submit')
+      submit.value = 'Thank you for your booking request. A member of our team will be in touch to confirm shortly.';
+    } */
+  }
 }
 
-    function isEmpty(str) {
-        return (str.length === 0 || !str.trim());
-    }
-    
-    function validatePhone (inputtext) {
-        let phoneno = /^\d{11}$/;
-        if (inputtext.value.match(phoneno))
-        {
-            return true; 
-        } else {
-            return false; 
-        }
-    }
    
-    function validateEmail(email) {
-        var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
-        return isEmpty(email) || re.test(email);
-    }
-  
-
-    function validateDate(enteredDate) {
-        let idate = document.getElementById("date"), 
-        dateReg = /(0[1-9]|[12][0-9]|3[01])[\/](0[1-9]|1[012])[\/]201[4-9]|20[2-9][0-9]/;
-        if (!dateReg.test(idate.value)) {
-            return false; 
-        } else {
-            return true; 
-        }
-        
-    }
 
     /*
     function validateTime(enteredTime) {

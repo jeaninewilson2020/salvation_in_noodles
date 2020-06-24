@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+html, body, h1, h2, h3, h4, h5, h6, div {
+    padding: 0;
+    border: 0;
+    margin: 0;
+  }
+
 body {
     margin: 0;
     font-family: Kanit, sans-serif;
@@ -139,6 +145,7 @@ p {
     background-position: center;
     background-size: cover;
     opacity: 0.9;
+    padding-bottom: 0; 
 }
 
 #submit {
@@ -169,4 +176,85 @@ label {
     min-width: 400px;
 }
 
+.thank-you {
+    display: flex;
+    height: 500px;  
+    background-image: url("images/noodles.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: auto; 
+}
 
+.thank-you .content {
+    margin: auto;
+    background-color: #f2ecdc;
+    width: 100%;
+    height: 240px; 
+
+}
+
+.contact-container-thanks {
+    background-image: url("images/vietnam.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+    padding-bottom: 0; 
+    min-height: calc(100vh - 740px);
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 12px; 
+    }
+ 
+    #specialities {
+        min-height: 350px; 
+    }
+    #name {
+        min-width: 200px; 
+    }
+
+    #phone {
+       min-width: 200px; 
+    }
+    #email {
+       min-width: 200px; 
+    }
+    .thank-you {
+        height: 250px; 
+    }
+    .thank-you .content {
+        height: 120px; 
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        font-size: 14px; 
+    }
+
+    #specialities {
+        min-height: 375px; 
+    }
+    #name {
+        min-width: 250px; 
+    }
+
+    #phone {
+       min-width: 250px; 
+    }
+    #email {
+       min-width: 250px; 
+    }
+    .thank-you {
+        height: 300px; 
+    }
+    .thank-you .content {
+        height: 150px; 
+    }
+
+}
