@@ -15,6 +15,16 @@ function validatePhone(inputtext) {
     return false; 
 }
 
+function formatPhoneNumber(phoneNo) {
+    phoneNo = phoneNo.join('');
+    return '(' + phoneNo.substring(0, 1) + ')'
+           + phoneNo.substring(1, 4) 
+           + ' '
+           + phoneNo.substring(4, 7)
+           + ' '
+           + phoneNo.substring(7)
+ }
+
 function validateEmail(email) {
     "use strict";
     var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
@@ -34,6 +44,37 @@ function validateDate(enteredDate) {
     
 }
 
+/*
+function validateTime(enteredTime) {
+    re = /^(\d{1,2}):(\d{2})([ap]m)?$/;
+    if (document.getElementById('time').value != '') {
+        if (regs = document.getElementById('time').value.match(re)) {
+
+            if (regs[3]) {
+             // 12-hour value between 6 and 10 
+                if (regs[1] < 6 || regs[1] > 10) {
+                    alert("We accept bookings between 6pm and 10pm");
+                    return false;
+                }
+            } else {
+                // 24 hour value between 18 and 22 
+                if (regs[1] > 22 || regs[1] < 18) {
+                    alert("We accept bookings between 18:00 and 22:00");
+                    return false; 
+                }
+            }
+            // Minute value between 0 and 59 
+            if (regs[2] > 59) {
+                alert("Invalid value for minutes: " + regs[2]);
+                return false; 
+            }
+        } else {
+            return true; 
+        }
+    }
+}
+*/
+
 function validateForm() {
     if (isEmpty(document.getElementById('name').value.trim())) {
         alert('Name is required!');
@@ -42,8 +83,10 @@ function validateForm() {
     else if (!validatePhone(document.getElementById('phone'))) {
         alert("Please enter a valid 11 digit UK phone number");
         return false;
+    } else {
+        (formatPhoneNumber(document.getElementById('phone'))); 
     }
-    else if (!validateEmail(document.getElementById('email').value.trim())) {
+    if (!validateEmail(document.getElementById('email').value.trim())) {
         alert('Email must be a valid email address!');
         return false;
     }
@@ -63,34 +106,10 @@ function validateForm() {
     } else if (!validateTime(document.getElementById('time'))) {
         alert("Please enter a valid time. We are open for bookings Monday to Sunday, 6pm to 10pm.")
     }
-    else {
-      const submit = document.getElementById('submit')
-      submit.value = 'Thank you for your booking request. A member of our team will be in touch to confirm shortly.';
-    } */
+  */
   }
 }
 
    
 
-    /*
-    function validateTime(enteredTime) {
-        re = ^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$;
-        if (document.getElementById('time').value != '') {
-            if (regs = document.getElementById('time').value.match(re)) {
-                if (regs[3]) {
-                    if (regs[1] < 6 || regs[1] > 10) {
-                        return false;
-                    }
-                } else {
-                    if (regs[1] > 22 || regs[1] < 18) {
-                        return false; 
-                    }
-                }
-                if (regs[2] > 59) {
-                    return false; 
-                }
-            } else {
-                return true; 
-            }
-        }
-*/
+    
