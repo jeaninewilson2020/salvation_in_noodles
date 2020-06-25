@@ -178,7 +178,7 @@ label {
 
 .thank-you {
     display: flex;
-    height: 500px;  
+    height: 300px;  
     background-image: url("images/noodles.jpg");
     background-size: cover;
     background-position: center; 
@@ -187,14 +187,22 @@ label {
     margin: auto; 
 }
 
-.thank-you .content {
-    margin: auto;
+.thanks-content { 
+    margin: auto; 
+    padding: 0;  
     background-color: #f2ecdc;
     width: 100%;
-    height: 240px; 
-
+    height: 100px; 
 }
 
+.centered-text {
+    margin: auto; 
+    
+}
+
+#bottom-text {
+    padding-bottom: 120px; 
+}
 .contact-container-thanks {
     background-image: url("images/vietnam.jpg");
     background-repeat: no-repeat;
@@ -202,8 +210,9 @@ label {
     background-size: cover;
     opacity: 0.9;
     padding-bottom: 0; 
-    min-height: calc(100vh - 740px);
+
 }
+
 
 @media only screen and (max-width: 480px) {
     body {
@@ -222,12 +231,6 @@ label {
     }
     #email {
        min-width: 200px; 
-    }
-    .thank-you {
-        height: 250px; 
-    }
-    .thank-you .content {
-        height: 120px; 
     }
 
 }
@@ -250,11 +253,22 @@ label {
     #email {
        min-width: 250px; 
     }
-    .thank-you {
-        height: 300px; 
-    }
-    .thank-you .content {
-        height: 150px; 
-    }
 
+}
+
+min-height: calc(100vh - 740px);
+
+
+.thank-you {
+    height: 250px; 
+}
+.thank-you .content {
+    height: 120px; 
+}
+
+.thank-you {
+    height: 300px; 
+}
+.thank-you .content {
+    height: 150px; 
 }
